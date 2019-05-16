@@ -4,11 +4,28 @@
 
 
 <div class="container" style="padding-top:2em;">
-<div class="page-inner" style="background-color:rgba(7,8,17,0.6);">
+<div class="page-inner" >
+
 
 <div class="columns" >
+
+    <div class="column is-primary">
+        
+    
+    </div>
+    <div class="column">
+        Guides
+    </div>
+    <div class="column">
+        Commanders
+    </div>
+</div>
+
+<div class="columns" >
+
   <div class="column">
 
+  <!-- News -->
   <?php
     if ( have_posts() ) : while ( have_posts() ) : the_post();
         get_template_part( 'content', get_post_format() );
@@ -21,11 +38,17 @@
   </div>
 </div>
 <div class="columns">
+
+
   
     <div class="column">
 
 
-        <h2> Best strategy </h2>
+        <h2> Latest comments </h2>
+        <?php if (have_comments() ) :
+            echo "There are comments.";
+        endif;
+            ?>
 
       
         

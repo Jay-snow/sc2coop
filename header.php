@@ -8,26 +8,11 @@
     
 
     <link rel="stylesheet" href="<?php echo get_bloginfo('template_directory'); ?>/bulma.css">
+    <link rel="stylesheet" href="<?php echo get_bloginfo('template_directory'); ?>/sc2main.css">
 
     <style>
 
-      html {
-        background-color:#0F1126;
-       
 
-
-      }
-
-      .container {
-        background-position: middle;
-        background-image: url(<?php echo get_bloginfo('template_directory'); ?>/stars3.jpg);
-        background-repeat: no-repeat;
-        background-position: middle;
-        height: 1000px;
-      }
-      body {
-       
-      }
     </style>
     <?php wp_head();?>
   </head>
@@ -36,9 +21,11 @@
 
     <nav class="navbar" role="navigation" aria-label="main navigation">
         <div class="navbar-brand">
-          <a class="navbar-item" href="https://bulma.io">
+          <a class="navbar-item" href="<?php echo get_bloginfo('wpurl'); ?>">
             <p>SC2COOPSTRATS</p>
           </a>
+
+          <?php wp_list_pages( '&title_li='); ?>
  
           <a role="button" class="navbar-burger burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
             <span aria-hidden="true"></span>

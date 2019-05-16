@@ -1,0 +1,23 @@
+.page-inner {
+    background-color:rgba(7,8,17,0.6);
+}
+
+      html {
+        background-color:#0F1126;
+       
+
+
+      }
+
+      .container {
+        background-position: middle;
+        background-image: url('./stars3.jpg');
+        background-repeat: no-repeat;
+        background-position: middle;
+        height: 1000px;
+      }
+
+
+      body {
+       
+      }

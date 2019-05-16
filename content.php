@@ -1,10 +1,11 @@
 <div class="blog-post" style="background-color:white;border:1px solid;">
-    <?php the_title(); ?>
-    <?php the_date() ?>; by <a href="#"><?php the_author(); ?> </a> 
     
-
-    <?php the_content(); ?>
-
+    <h1> 
+      <a href="<?php the_permalink(); ?> "> <?php the_title(); ?>  <?php the_author(); ?> </a> 
+    
+  <p>
+    <?php the_excerpt(); ?>
+</p>
 
 
 </div>
