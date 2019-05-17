@@ -1,16 +1,22 @@
+<!-- Header call -->
 <?php get_header(); ?>
 
-
-
-
 <div class="container" style="padding-top:2em;">
+
+<!-- Page background -->
 <div class="page-inner" >
 
 
 <div class="columns" >
 
-    <div class="column is-primary">
-        
+    <div class="column ">
+    Latest comments
+
+    <?php
+    if ( have_posts() ) : while ( have_posts() ) : the_post();
+        get_template_part( 'content', get_post_format() );
+	endwhile; endif;
+	?>
     
     </div>
     <div class="column">
@@ -32,15 +38,10 @@
 	endwhile; endif;
 	?>
 
-
- 
-        
   </div>
 </div>
 <div class="columns">
 
-
-  
     <div class="column">
 
 

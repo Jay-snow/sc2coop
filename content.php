@@ -1,3 +1,4 @@
+<!-- Content snippets for index. Used for news posts. Only has an excerpt -->
 <div class="blog-post" style="background-color:white;border:1px solid;">
     
     <h1> 
