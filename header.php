@@ -1,3 +1,4 @@
+<!-- Header template -->
 <!DOCTYPE html>
 <html>
   <head>
@@ -18,13 +19,14 @@
   </head>
 
   <body>
-
+    <!-- Main navigation -->
     <nav class="navbar" role="navigation" aria-label="main navigation">
         <div class="navbar-brand">
           <a class="navbar-item" href="<?php echo get_bloginfo('wpurl'); ?>">
             <p>SC2COOPSTRATS</p>
           </a>
 
+          <!-- Navigation items -->
           <?php wp_list_pages( '&title_li='); ?>
  
           <a role="button" class="navbar-burger burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
