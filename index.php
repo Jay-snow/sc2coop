@@ -12,11 +12,7 @@
     <div class="column ">
     Latest comments
 
-    <?php
-    if ( have_posts() ) : while ( have_posts() ) : the_post();
-        get_template_part( 'content', get_post_format() );
-	endwhile; endif;
-	?>
+
     
     </div>
     <div class="column">
@@ -29,15 +25,17 @@
 
 <div class="columns" >
 
-  <div class="column">
+  <div class="column is-6">
+        <div class="news-container">
 
-  <!-- News -->
+  <!-- News / Content.php -->
   <?php
     if ( have_posts() ) : while ( have_posts() ) : the_post();
         get_template_part( 'content', get_post_format() );
 	endwhile; endif;
 	?>
 
+    </div>
   </div>
 </div>
 <div class="columns">
