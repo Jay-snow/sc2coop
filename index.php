@@ -25,7 +25,7 @@
 
 <div class="columns" >
 
-  <div class="column is-6">
+  <div class="column is-8">
         <div class="news-container">
 
   <!-- News / Content.php -->

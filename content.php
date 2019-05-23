@@ -11,6 +11,7 @@ a {
   height:100%;
   display: flex;
   flex-direction:column;
+  margin-bottom:5px;
 }
 
 .card-content {
@@ -26,9 +27,9 @@ a {
 <!-- Blog post excerpt -->
 <div class="card">
   <div class="columns is-gapless">
-  <div class="column is-one-third">
+  <div class="column is-one-fifth " style="background-color:black;">
      <div class="card-image">
-      <figure class="image is-1by1">
+      <figure class="image is-square">
       <a href="https://placeholder.com"><img src="https://via.placeholder.com/184"></a>
        
       </figure>
@@ -37,9 +38,9 @@ a {
 
   <div class="column">
     
-      <div class="card-content ">     
+      <div class="card-content " style="height:146px;">     
         <!-- Blog post title -->
-         <h1> <a href="<?php the_permalink(); ?> "> <?php the_title(); ?> </a> </h1>
+         <h1 class="title"> <a href="<?php the_permalink(); ?> "> <?php the_title(); ?> </a> </h1>
           
         <!-- Blog post excerpt -->
         <p> <?php the_excerpt(); ?> </p>
@@ -50,9 +51,8 @@ a {
     
 
           <!-- Blog post author -->
-          <footer class="card-footer ">
-       <p class="card-footer-item">  By <?php the_author(); ?>  </p>
-         
+          <footer class="card-footer  ">
+       <p class="card-footer-item is-pulled-left">  By <?php the_author(); ?>  </p>
         </footer>
 
 
