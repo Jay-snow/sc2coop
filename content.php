@@ -31,6 +31,7 @@ a {
      <div class="card-image">
       <figure class="image is-square">
       <a href="https://placeholder.com"><img src="https://via.placeholder.com/184"></a>
+      <?php echo get_the_post_thumbnail(); ?>
        
       </figure>
     </div>
