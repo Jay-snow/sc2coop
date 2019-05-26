@@ -30,7 +30,6 @@ a {
   <div class="column is-one-fifth " style="background-color:black;">
      <div class="card-image">
       <figure class="image is-square">
-      <a href="https://placeholder.com"><img src="https://via.placeholder.com/184"></a>
       <?php echo get_the_post_thumbnail(); ?>
        
       </figure>
@@ -39,7 +38,7 @@ a {
 
   <div class="column">
     
-      <div class="card-content " style="height:146px;">     
+      <div class="card-content " >     
         <!-- Blog post title -->
          <h1 class="title"> <a href="<?php the_permalink(); ?> "> <?php the_title(); ?> </a> </h1>
           
