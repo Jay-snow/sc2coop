@@ -9,18 +9,36 @@
 
 <div class="columns" >
 
-    <div class="column ">
-    Latest comments
+
+    <div class="column " >
+
+    <div class="tabs is-toggle is-fullwidth is-large">
+  <ul>
+    <li >
+      <a>
+        <span class="icon"><i class="fas fa-database" aria-hidden="true"></i></span>
+        <span>Data</span>
+      </a>
+    </li>
+    <li>
+      <a>
+        <span class="icon"><i class="fas fa-book-dead" aria-hidden="true"></i></span>
+        <span>Strategies</span>
+      </a>
+    </li>
+    <li>
+      <a>
+        <span class="icon"><i class="fas fa-atom" aria-hidden="true"></i></span>
+        <span>Make a Guide</span>
+      </a>
+    </li>
+  </ul>
+</div>
 
 
     
     </div>
-    <div class="column">
-        Guides
-    </div>
-    <div class="column">
-        Commanders
-    </div>
+
 </div>
 
 <div class="columns" >
@@ -41,25 +59,7 @@
     </div>
   </div>
 </div>
-<div class="columns">
 
-    <div class="column">
-
-
-        <h2> Latest comments </h2>
-        <?php if (have_comments() ) :
-            echo "There are comments.";
-        endif;
-            ?>
-
-      
-        
-    </div>
-    <div class="column">
-      <h2> Area </h2>
-    </div>    
-
-</div>
 
 </div>
 </div>
