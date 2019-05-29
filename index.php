@@ -12,7 +12,7 @@
 
     <div class="column " >
 
-    <div class="tabs is-toggle is-fullwidth is-large">
+<div class="tabs is-toggle is-fullwidth is-large">
   <ul>
     <li >
       <a>
@@ -33,6 +33,12 @@
       </a>
     </li>
   </ul>
+</div>
+
+<div>
+<?php if (function_exists('user_submitted_posts')) user_submitted_posts(); ?>
+
+
 </div>
 
 
